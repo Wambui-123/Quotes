@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Quote Creator Application is the best & easy app for uploading inspirational and motivating quotes for other people to view anytime.
 Languages used are: Html, Css, Typescript, Javascript and Angular
 #  Link to live server
-https://wambui-123.github.io/Quotes/
+https://62534afbd793544498b7a74d--graceful-rolypoly-dabf14.netlify.app/
 
 
 ## Development server
