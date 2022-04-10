@@ -1,6 +1,11 @@
 # Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+#  Description 
+
+Quote Creator Application is the best & easy app for uploading inspirational and motivating quotes for other people to view anytime.
+#  Link to live server
+
 
 ## Development server
 
