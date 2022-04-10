@@ -1,0 +1,42 @@
+<h1>Quote Creator Application</h1>
+<p>Let your quotes speak!</p>
+<p>
+  Quote Creator Application is the best & easy app for uploading inspirational
+  and motivating quotes for other people to view anytime.
+</p>
+<div class="d-flex w-100">
+  <div class="d-flex flex-wrap flex-row w-80">
+    <div class="d-flex" *ngFor="let quote of quotes">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ quote.name }}</h5>
+          <p class="card-text">"{{ quote.content }}"</p>
+          <p class="card-text">
+            <small>Author : ~{{ quote.author }}</small>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Posted: {{quote.lastUpdatedAt|datePipe}}.</small>
+          </p>
+          <div class="card-footer">
+            <div class="column d-flex justify-content-between">
+              <div>
+                <button class="m-1 btn btn-success" (click)="vote(quote.id, 'upVote')">
+                  <fa-icon [icon]="faThumbsUp"></fa-icon>
+                  {{ quote.upVotes }} 
+                </button>
+                <button class="m-1 btn btn-danger" (click)="vote(quote.id, 'downVote')">
+                  <fa-icon [icon]="faThumbsDown"></fa-icon>
+                  {{ quote.downVotes }}
+                </button>
+                <fa-icon [icon]="faTrash" class="btn btn-dark" (click)="deleteQuote(quote.id)"></fa-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex w-20">
+    <app-quote-details [quotes]="quotes"></app-quote-details>
+  </div>
+</div>

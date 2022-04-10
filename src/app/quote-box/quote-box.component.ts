@@ -5,9 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './quote-box.component.html',
   styleUrls: ['./quote-box.component.css']
 })
-export class QuoteBoxComponent implements OnInit {
 
-  constructor() { }
+export class QuoteBoxComponent implements OnInit {
+ 
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
