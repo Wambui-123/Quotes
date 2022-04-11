@@ -11,10 +11,10 @@ export class HighlightQouteDirective implements OnInit, OnChanges {
   }
 
   private highlight() {
-    this.el.nativeElement.style.backgroundColor = 'green';
+    this.el.nativeElement.style.backgroundColor = '#41e30b';
 
     if (this.hasHighestUpvotes) {
-        this.el.nativeElement.style.backgroundColor = 'green';
+        this.el.nativeElement.style.backgroundColor = '#41e30b';
     } else {
         this.el.nativeElement.style.backgroundColor = '';
     }
