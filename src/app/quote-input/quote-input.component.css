@@ -3,3 +3,6 @@
     border-radius: 10px;
     background-color: grey;
 }
+div.card-footer{
+    background-color: black;
+}

@@ -1,6 +1,6 @@
-<h1>Quote Creator Application</h1>
-<p>Let your quotes speak!</p>
-<p>
+<h1 style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;" class="fw-bolder">Quote Creator Application</h1>
+<p style="font-style: italic; font-size: 20px; font-weight: 300;">Let your quotes speak!</p>
+<p style="font-style: italic; font-size: 20px; font-weight: 300;">
   Quote Creator Application is the best & easy app for uploading inspirational
   and motivating quotes for other people to view anytime.
 </p>
@@ -9,13 +9,13 @@
     <div class="d-flex" *ngFor="let quote of quotes">
       <div class="card" appHighlightQoute [hasHighestUpvotes]="hasHighestUpvotes(quote)?.id === quote.id">
         <div class="card-body">
-          <h5 class="card-title">{{ quote.name }}</h5>
-          <p class="card-text">"{{ quote.content }}"</p>
+          <h5 class="card-title" class="fw-bold" style="font-family: Bradley Hand, cursive;">Posted by: {{ quote.name }}</h5>
+          <p class="card-text" style="font-style: italic; font-weight: 150;">"{{ quote.content }}"</p>
           <p class="card-text">
-            <small>Author : ~{{ quote.author }}</small>
+            <small class="fw-bold">Author : ~{{ quote.author }}</small>
           </p>
           <p class="card-text">
-            <small class="text-muted">Posted: {{quote.lastUpdatedAt|datePipe}}.</small>
+            <small class="text-muted" class="fw-normal" style="font-family: 'Courier New', Courier, monospace;">Posted: {{quote.lastUpdatedAt|datePipe}}.</small>
           </p>
           <div class="card-footer">
             <div class="column d-flex justify-content-between">

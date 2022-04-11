@@ -15,8 +15,7 @@ interface Quote {
   templateUrl: './quote-input.component.html',
   styleUrls: ['./quote-input.component.css'],
 })
-export class QuoteInputComponent implements OnInit {
-  someText: any;
+export class QuoteInputComponent {
   name: string = '';
   content: string = '';
   author: string = '';
@@ -34,11 +33,15 @@ export class QuoteInputComponent implements OnInit {
       downVotes: 0,
       lastUpdatedAt: new Date().toISOString(),
     });
+    this.clearQuote()
+  }
+
+  clearQuote() {
+    this.name = ''
+    this.content = ''
+    this.author = ''
   }
   
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.addQuote);
-  }
 }
