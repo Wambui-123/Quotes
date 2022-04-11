@@ -10,7 +10,15 @@
       <div class="card" appHighlightQoute [hasHighestUpvotes]="hasHighestUpvotes(quote)?.id === quote.id">
         <div class="card-body">
           <h5 class="card-title">{{ quote.name }}</h5>
-          <p class="card-text">"{{ quote.content }}"</p>
+          <p class="card-text">"{{ quote.content }}"</p>if (this.hasHighestUpvotes) {
+            this.el.nativeElement.style.backgroundColor = if (this.hasHighestUpvotes) {
+              this.el.nativeElement.style.backgroundColor = 'green';
+          } else {
+              this.el.nativeElement.style.backgroundColor = '';
+          }'green';
+        } else {
+            this.el.nativeElement.style.backgroundColor = '';
+        }
           <p class="card-text">
             <small>Author : ~{{ quote.author }}</small>
           </p>

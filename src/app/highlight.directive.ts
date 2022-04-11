@@ -28,3 +28,4 @@ export class HighlightQouteDirective implements OnInit, OnChanges {
       this.highlight()
   }
 }
+
