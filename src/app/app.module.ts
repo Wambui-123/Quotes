@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteInputComponent } from './quote-input/quote-input.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +15,7 @@ import { HighlightQouteDirective } from './highlight.directive';
   declarations: [
     DatePipe,
     AppComponent,
-    QuoteDetailsComponent,
+    QuoteInputComponent,
     HomeComponentComponent,
     HighlightQouteDirective,
   ],
