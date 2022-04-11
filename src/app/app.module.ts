@@ -8,6 +8,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from './date.pipe';
+import { HighlightQouteDirective } from './highlight.directive';
 
 
 
@@ -18,6 +19,7 @@ import { DatePipe } from './date.pipe';
     QuoteBoxComponent,
     QuoteDetailsComponent,
     HomeComponentComponent,
+    HighlightQouteDirective,
   ],
   imports: [
     BrowserModule,

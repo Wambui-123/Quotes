@@ -93,6 +93,20 @@ export class HomeComponentComponent implements OnInit {
     this.quotes = this.quotes.filter(quote => quote.id !== id)
   }
 
+  hasHighestUpvotes(quote: Quote): Quote | undefined {
+    let highestVote = 0
+    let quoteWithHighestVote: Quote  | undefined = undefined
+
+    this.quotes.forEach(quote => {
+      if (highestVote < quote.upVotes) {
+        highestVote = quote.upVotes
+        quoteWithHighestVote = quote
+      }
+    })
+
+    return quoteWithHighestVote
+  }
+
   constructor() { }
 
   ngOnInit(): void {
