@@ -94,6 +94,7 @@ export class HomeComponentComponent implements OnInit {
   }
 
   hasHighestUpvotes(quote: Quote): Quote | undefined {
+    console.log({ quote })
     let highestVote = 0
     let quoteWithHighestVote: Quote  | undefined = undefined
 
@@ -103,6 +104,8 @@ export class HomeComponentComponent implements OnInit {
         quoteWithHighestVote = quote
       }
     })
+
+    console.log({ quoteWithHighestVote })
 
     return quoteWithHighestVote
   }

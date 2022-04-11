@@ -7,7 +7,7 @@
 <div class="d-flex w-100">
   <div class="d-flex flex-wrap flex-row w-80">
     <div class="d-flex" *ngFor="let quote of quotes">
-      <div class="card" appHighlightQoute>
+      <div class="card" appHighlightQoute [hasHighestUpvotes]="hasHighestUpvotes(quote)?.id === quote.id">
         <div class="card-body">
           <h5 class="card-title">{{ quote.name }}</h5>
           <p class="card-text">"{{ quote.content }}"</p>
