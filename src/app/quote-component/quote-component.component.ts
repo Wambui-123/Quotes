@@ -12,11 +12,11 @@ interface Quote {
 }
 
 @Component({
-  selector: 'app-home-component',
-  templateUrl: './home-component.component.html',
-  styleUrls: ['./home-component.component.css']
+  selector: 'app-quote-component',
+  templateUrl: './quote-component.component.html',
+  styleUrls: ['./quote-component.component.css']
 })
-export class HomeComponentComponent implements OnInit {
+export class QuoteComponentComponent implements OnInit {
   
   faTrash = faTrash;
   faThumbsUp = faThumbsUp;
