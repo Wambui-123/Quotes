@@ -16,3 +16,10 @@ text-muted{
 h1{
     text-align: center;
 }
+
+.header{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    font-size: 45px;
+    text-decoration: underline;
+    font-style: italic;
+}
